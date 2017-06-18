@@ -1,16 +1,12 @@
-<div class="container">
-  <div class="row">
-  <div class="navbar navbar-default navbar-fixed-top">
-    <%= link_to 'PersonalBlog', root_path, class: "navbar-brand"%>
-    <div class=" menu navbar-collapse collapse navbar-responsive-collapse">
-      <ul class="navmenu">
-        <li><a href="<%= root_path %>"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
-         <li><a href="<%= personal_websites_skill_path %>"><span>Skills</span></a></li>
-         <li><a href="<%= personal_websites_experience_path %>"><span>Work & Experience</span></a></li>
-         <li><a href="<%= personal_websites_education_path %>"><span>Education</span></a></li>
-         <li><a href="<%= personal_websites_about_path %>"><span>About</span></a></li>
-      </ul>
-    </div>
-    </div>
+<div class="masthead clearfix">
+  <div class="inner">
+    <h3 class="masthead-brand">Cover</h3>
+    <nav class="nav nav-masthead">
+			<%= link_to 'Home', root_path, class: "nav-link active"%>
+			<%= link_to 'Education', personal_websites_education_path, class: "nav-link active"%>
+			<%= link_to 'Work & Experience', personal_websites_experience_path, class: "nav-link active"%>
+			<%= link_to 'Skills', personal_websites_skill_path, class: "nav-link active"%>
+			<%= link_to 'About', personal_websites_about_path, class: "nav-link active"%>
+    </nav>
   </div>
 </div>
