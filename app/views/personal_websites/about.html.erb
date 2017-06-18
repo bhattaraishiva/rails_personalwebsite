@@ -1,0 +1,97 @@
+<header class = "blog-header" style= "background-image: url('images/home-bg.jpg')">
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-lg-8 col-lg-offset-2">
+				<div class = "blog-heading">
+					<h1>About me</h1>
+					<h6>This blog contains my studies and conclusions in different area of my interest</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class = "container">
+	<div class = "row">
+		<div class = "col-lg-8 col-lg-offset-2">
+			<div class="pattern-overlay">
+			<h4 class = "education-title ">About me</h4>
+
+
+			<div class="first-para ">
+				<p>Sans-serif typefaces first originated in the eighteenth century
+					but didn’t see widespread use until the nineteenth century.
+					In the print world, serif typefaces are almost universally used
+					for setting running body text, however, on the web, sans-serifs dominate.
+					On lower-resolution displays, sans-serifs tend to display better, however,
+				 	higher-resolution displays can better handle the fine details of serifs,
+				 	so I predict we’ll see serif typefaces used more on the web in the coming years.
+				</p>
+			</div>
+		</div>
+		<div class="pattern-overlay">
+
+			<h4 class = "education-title">My contact Info</h4>
+			<div class = "row">
+				<div class = "col-md-7">
+					<div class="map-container">
+        				<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1906.8526778126957!2d23.84811115149089!3d61.44972538236419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edfb0bcd25e53%3A0x7cb518d41c1ea947!2sInsin%C3%B6%C3%B6rinkatu%2C+33720+Tampere!5e0!3m2!1sen!2sfi!4v1479347516458" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          			</div>
+          			<i class="map-top"></i>
+        				<i class="map-right"></i>
+        				<i class="map-bottom"></i>
+        				<i class="map-left"></i>
+    				</div>
+				</div>
+
+				<div class="col-md-5">
+				<div class="mycontactinfo">
+						<ul>
+							<li><i class="fa fa-home" aria-hidden="true"></i> Current address: Insinoorinkatu 60 A 49, Tampere 33720, Finland</li>
+							<li><i class="fa fa-home" aria-hidden="true"></i> Home: Plotline, 3-Number, Manigram, Tilottama-12, Butwal, Nepal</li>
+							<li><i class="fa fa-mobile" aria-hidden="true"></i> +358-484976871</li>
+							<li><i class="fa fa-envelope" aria-hidden="true"></i> bhattaraishiva17@gmail.com</li>
+							<li><i class="fa fa-download" aria-hidden="true"></i> Download My Resume</li>
+						</ul>
+						</div>
+					</div>
+			</div>
+</div>
+
+<div class="pattern-overlay">
+<h4 class = "education-title">Message me</h4>
+
+
+<!-- for javascript validation
+			<form method="post" action="/about" id="contactform" name="contactform" onsubmit="return validate_aboutform();">
+-->
+			<form method="post" action="/about" id="contactform" class="contactform"name="contactform">
+
+				<div class = "col-md-7">
+
+					<input name="name" type="text" class="contactform" placeholder="Name *" ><br>
+					<input name="email" type="email" class="contactform" placeholder="E-mail address *" > <br>
+			  		<input name="phone" type="phone" class="contactform" placeholder="Phone *" ><br>
+				</div>
+				<div class = "col-md-5">
+					<textarea name="comment" class="contactform" placeholder="Message *"></textarea>
+
+				</div>
+
+				<div class = "col-md-3">
+				<input type = "hidden" name = "_csrf" value = "{{ csrfToken }}" >
+			  		<input type="submit" id="submit" class="contactform submit" value="Send message">
+			   </div>
+			</form>
+</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div>
+	<br>
+	<br>
+</div>

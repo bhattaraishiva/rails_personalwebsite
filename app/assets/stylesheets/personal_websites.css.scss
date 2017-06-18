@@ -1,0 +1,542 @@
+// Place all the styles related to the personal_websites controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html { height: 100% }
+
+body {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: 100%;
+  position:relative;
+  padding: 0 0 100px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	font-family: 'Montserrat',sans-serif;
+	text-align: center;
+	color: #fff;
+}
+
+:root {
+	--background-color: #0285a1;
+
+	--text-align: center;
+	--font-family-oleo: 'Oleo Script', cursive;
+	--font-family: 'Montserrat',sans-serif;
+}
+
+/*------------------ANIMATION--------------*/
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+.navbar {
+	background: var(--background-color);
+	margin-bottom: 0;
+	border-bottom: 2px solid red;
+}
+.navmenu > li{
+	display: inline-block;
+	padding: 24px 32px;
+}
+ul.navmenu {
+	margin: 0;
+	text-align: var(--text-align);
+}
+
+
+ul.navmenu li a{
+	color: #fff;
+	padding: 0;
+	font-size: 16px;
+	font-family: var(--font-family);
+	text-transform: uppercase;
+}
+
+.socialsite > li {
+	display: inline-block;
+}
+
+ul.socialsite li a{
+	color: #fff;
+	padding: 1px;
+	font-size: 30px;
+	font-family: var(--font-family);
+	position: relative;
+	padding: 5px 0 5px 0;
+	line-height: 1px;
+}
+
+
+.footer {
+	background: var(--background-color);
+	text-align: var(--text-align);
+	position: relative;
+	right: 0;
+   bottom: 0;
+   left: 0;
+   font-family: var(--font-family);
+   border-top: 2px solid red;
+
+
+}
+
+.footer p {
+	color: #fff;
+	line-height: 1px;
+}
+/* ---------css for gototop------
+.gototop {
+	 float: right;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.gototop i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 0px;
+    font-size: 30px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+*/
+
+
+/*
+|--------------------------------------------------------------------------
+| UItoTop jQuery Plugin 1.2
+| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
+|--------------------------------------------------------------------------
+*/
+
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:100%;
+	background:url(../images/ui.totop.png) no-repeat left top;
+}
+
+#toTopHover {
+	background:url(../images/ui.totop.png) no-repeat left -51px;
+	width:51px;
+	height:51px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}
+
+/*
+.banner_ownerinfo {
+	margin: 352px 0 160px;
+	margin: auto;
+	text-align: center;
+	display: inline-block;
+	padding: 64px;
+}
+*/
+.banner_ownerinfo {
+	margin: auto;
+	text-align: center;
+	display: inline-block;
+	padding: 80px;
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-ms-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	animation-duration: 2s;
+
+}
+
+
+.banner_ownerinfo h1 {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration:underline;
+	text-align: center;
+}
+
+.banner_ownerinfo h6 {
+	font-size: 14px;
+	font-family: var(--font-family);
+	margin-top: 1px;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+/* css for blog*/
+
+.home-background {
+	background: repeat;
+   background-position:0px 0px;
+	text-align: center;
+	min-height: 100%;
+	background-size:cover;
+}
+/*css for background slider*/
+.fader {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+
+.blog-header
+.blog_sample-header
+.education-header{
+  background-color: #777777;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  border-bottom: 2px solid red;
+}
+
+.blog-header .blog-heading,
+.blog_sample-header .blog_sample-heading
+.education-header{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 900;
+	color: #fff;
+	font-family: var(--font-family);
+	margin: 100px 100px;
+}
+/* --- background pattern --- */
+
+
+.parallax-pattern-overlay {
+  background-image: url(/assets/retina_wood.png);
+	background-repeat: repeat;
+	margin-bottom: -25px;
+}
+
+.pattern-overlay {
+  background-image: url(/assets/pattern.png);
+	background-repeat: repeat;
+	
+}
+
+.blog-heading > h1{
+	font-family: var(--font-family);
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.blog-heading > h6{
+	font-family: var(--font-family-oleo);
+	font-size: 14px;
+	font-weight: normal;
+}
+.blog-common > a {
+	color: #333333;
+}
+
+.blog-common > a:hover,
+.blog-common > a:focus{
+	color: var(--background-color);
+	text-decoration: underline;
+}
+
+.blog-common > a > .blog-title {
+	font-size: 20px;
+	margin-top: 30px;
+   margin-bottom: 10px;
+   font-weight: 900;
+  	color: black;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.blog-common > .blog-by {
+	color: #777777;
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.section-heading {
+	font-size: 24px;
+	margin-top: 60px;
+	font-weight: 700;
+}
+
+.education-title {
+  font-size: 24px;
+  color: black;
+	text-align:center;
+	font-weight: 900;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+
+.education-title::first-letter {
+	color: var(--background-color);
+}
+.modal-body.modal-spa {
+    padding: 0 1em 2em;
+}
+
+.experience-grids {
+    width: 90%;
+}
+
+.experience-left {
+    float: left;
+    width: 30%;
+    background: var(--background-color);
+    text-align: center;
+    padding: 2em 0;
+    border: 2px solid black;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	transition: .5s all;
+	-o-transition: .5s all;
+	-ms-transition: .5s all;
+}
+
+.experience-right {
+    float: right;
+    width: 70%;
+    border: 2px solid ;
+	padding: 1.5em;
+}
+.experience-left h3 {
+    font-size: 1.8em;
+    color: #fff;
+    font-family:  var(--font-family);
+    font-weight: 800;
+
+}
+.experience-left h5 {
+    font-size: 1em;
+    color: #fff;
+    margin-top: 1em;
+}
+.experience-right h4 {
+    font-size: 1.6em;
+    color: #0285a1;
+    margin-bottom: 0.5em;
+	font-weight: 900;
+}
+
+
+.experience-left h3 span {
+    font-size: .5em;
+    font-weight: 300;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.experience-grids.experience-grids-btm {
+    margin: 2em auto;
+}
+
+/*for skills*/
+.bar-title {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #777;
+	margin: 0 0 1px 0;
+}
+.bar {
+	background-color: grey;
+	width: 100%;
+	height: 20px;
+	margin-bottom: 10px;
+}
+.bar-inner {
+	background-color: var(--background-color);
+	width: 0%;
+	height: 100%;
+	position: relative;
+	-webkit-transition: width 1000ms linear;
+	-moz-transition: width 1000ms linear;
+	transition: width 1000ms linear;
+}
+.bar-inner::after {
+	position: absolute;
+	right: 2.5%;
+	content: attr(data-percent);
+	line-height: 20px;
+	color: #fff;
+	font-weight: 700;
+}
+
+/* --- Contact --- */
+/* --- Map --- */
+.map{
+	position:relative;
+	margin-top:1px;
+	margin-bottom:1px;
+}
+
+.map iframe{
+	width:100%;
+	height:350px;
+	border: dashed;
+}
+
+.map-container {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .map-container i {
+        position: absolute;
+        display: block;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    }
+
+    .map-top { top: -5px; left: 0; right: 0; height: 5px; }
+    .map-right { right: -5px; top: 0; bottom: 0; width: 5px; }
+    .map-bottom { bottom: -5px; left: 0; right: 0; height: 5px; }
+    .map-left { left: -5px; top: 0; bottom: 0; width: 5px; }
+
+
+
+.mycontactinfo ul {
+	color:#333;
+	list-style:none;
+	margin-left:-40px;
+}
+
+.mycontactinfo ul li {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.mycontactinfo i {
+	color: var(--background-color);
+	font-size: 30px;
+}
+
+input.contactform {
+	background:#fff;
+	border:solid 1px #ddd;
+	color:#000;
+	padding:15px 30px;
+	margin-right:3%;
+	margin-bottom:5px;
+	outline:none;
+	width: 400px;
+}
+
+textarea.contactform {
+	background:#fff;
+	color:#000;
+	border:solid 1px #ddd;
+	padding:15px 30px;
+	width: 400px;
+	margin-bottom:40px;
+	outline:none;
+	height:157px;
+}
+.contactform.submit {
+	background:var(--background-color);
+	font-family:'Montserrat',sans-serif;
+	color:#fff;
+	font-size:14px;
+	font-weight:900;
+	text-align:center;
+	margin-bottom: 5px;
+	position: relative;
+	top: -30px;
+	width: 200px;
+	border:none !important;
+	border-radius:3px;
+}
+.contactform.submit:hover {
+	background:black ;
+}
+
+.error input,input.error,.error textarea,textarea.error {
+	background-color:#ffffff;
+	border:1px solid red !Important;
+	-webkit-transition:border linear 0.2s,box-shadow linear 0.2s;
+	-moz-transition:border linear 0.2s,box-shadow linear 0.2s;
+	-o-transition:border linear 0.2s,box-shadow linear 0.2s;
+	transition:border linear 0.2s,box-shadow linear 0.2s;
+}
+
+
+#commentByID, #commentBodyID{
+			height: 56px;
+			font-size: 18px;
+			border-right: transparent;
+			border-top: transparent;
+			border-left: transparent;
+			border-bottom: transparent;
+			margin-top: 10px;
+	}
+

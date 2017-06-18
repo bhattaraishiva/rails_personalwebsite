@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get 'personal_websites/education'
   get 'personal_websites/experience'
   get 'personal_websites/about'
-  
+
   root 'personal_websites#home'
 end

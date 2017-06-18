@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html>
+<  html xmlns="http://www.w3.org/1999/xhtml" >
   <head>
-    <title>Personalwebsite</title>
+    <meta charset="utf-8" />
+    <meta[name="viewport" content="width=device-width, initial-scale=1.0"]>
+
+    <title>
+      <%= content_for?(:title) ? yield(:title) : 'PersonalBlog' %>
+    </title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +14,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "layouts/header" %>
+      <div class="parallax-pattern-overlay">
+        <div class="container">
+          <%= yield %>
+        </div> <!-- /container -->
+      </div>
+    <%= render "layouts/footer" %>
   </body>
 </html>
