@@ -55,7 +55,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 
@@ -69,6 +69,7 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  color: #0285a1;
 }
 
 .nav-masthead .nav-link {
@@ -89,8 +90,8 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #0285a1;
+  border-bottom-color: #0285a1;
 }
 
 @media (min-width: 48em) {
@@ -121,9 +122,9 @@ body {
  */
 
 .mastfoot {
-  color: rgba(255,255,255,.5);
+  //color: rgba(255,255,255,.5);
+  color: #0285a1;
 }
-
 
 /*
  * Affix and center
@@ -136,7 +137,7 @@ body {
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position:relative;
     bottom: 0;
   }
   /* Start the vertical centering */
@@ -155,7 +156,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 42rem;
+    width: 100%;
   }
 }
 
@@ -163,15 +164,13 @@ body {
 /* css for education page */
 
 
-.parallax-pattern-overlay {
-  background-image: url(/assets/retina_wood.png);
-	background-repeat: repeat;
-}
 
 .pattern-overlay {
-  background-image: url(/assets/pattern.png);
+  background-image: url(/assets/retina_wood.png);
 	background-repeat: repeat;
-
+  padding-top:  80px;
+  margin-top: 4rem;
+  bottom: 10px;
 }
 
 .blog-heading > h1{
