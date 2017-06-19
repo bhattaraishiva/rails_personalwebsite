@@ -27,10 +27,10 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #fff;
 }
 body {
-  color: #fff;
+  color: #333;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
@@ -132,7 +132,7 @@ body {
 @media (min-width: 40em) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: absolute;
     top: 0;
   }
   .mastfoot {
@@ -157,4 +157,143 @@ body {
   .cover-container {
     width: 42rem;
   }
+}
+
+
+/* css for education page */
+
+
+.parallax-pattern-overlay {
+  background-image: url(/assets/retina_wood.png);
+	background-repeat: repeat;
+}
+
+.pattern-overlay {
+  background-image: url(/assets/pattern.png);
+	background-repeat: repeat;
+
+}
+
+.blog-heading > h1{
+	font-family: var(--font-family);
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.blog-heading > h6{
+	font-family: var(--font-family-oleo);
+	font-size: 14px;
+	font-weight: normal;
+}
+.blog-common > a {
+	color: #333333;
+}
+
+.blog-common > a:hover,
+.blog-common > a:focus{
+	color: var(--background-color);
+	text-decoration: underline;
+}
+
+.blog-common > a > .blog-title {
+	font-size: 20px;
+	margin-top: 30px;
+   margin-bottom: 10px;
+   font-weight: 900;
+  	color: black;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.blog-common > .blog-by {
+	color: #777777;
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.section-heading {
+	font-size: 24px;
+	margin-top: 60px;
+	font-weight: 700;
+}
+
+.education-title {
+  font-size: 24px;
+  color: black;
+	text-align:center;
+	font-weight: 900;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+
+.education-title::first-letter {
+	color: var(--background-color);
+}
+.modal-body.modal-spa {
+    padding: 0 1em 2em;
+}
+
+.experience-grids {
+    width: 90%;
+}
+
+.experience-left {
+    float: left;
+    width: 30%;
+    background: var(--background-color);
+    text-align: center;
+    padding: 2em 0;
+    border: 2px solid black;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	transition: .5s all;
+	-o-transition: .5s all;
+	-ms-transition: .5s all;
+}
+
+.experience-right {
+    float: right;
+    width: 70%;
+    border: 2px solid ;
+	padding: 1.5em;
+}
+.experience-left h3 {
+    font-size: 1.8em;
+    color: #fff;
+    font-family:  var(--font-family);
+    font-weight: 800;
+
+}
+.experience-left h5 {
+    font-size: 1em;
+    color: #fff;
+    margin-top: 1em;
+}
+.experience-right h4 {
+    font-size: 1.6em;
+    color: #0285a1;
+    margin-bottom: 0.5em;
+	font-weight: 900;
+}
+
+
+.experience-left h3 span {
+    font-size: .5em;
+    font-weight: 300;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.experience-grids.experience-grids-btm {
+    margin: 2em auto;
 }
