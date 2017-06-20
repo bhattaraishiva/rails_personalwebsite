@@ -61,26 +61,25 @@
 			<div class="col-lg-12 col-lg-offset-2">
 				<h4 class="education-title">Message me</h4>
 
-				<form method="post" action="/about" id="contactform" class="contactform" name="contactform">
-
-					<div class="col-md-7">
-
-						<input name="name" type="text" class="contactform" placeholder="Name *"><br>
-						<input name="email" type="email" class="contactform" placeholder="E-mail address *">
-						<br>
-						<input name="phone" type="phone" class="contactform" placeholder="Phone *"><br>
+				<%= form_for(@about, url: about_path, html: {method: :post, role: 'form'}) do |f| %>
+					<div class="form-group">
+						<%= f.label :name %>
+						<%= f.text_field :name, class: 'form-control', placeholder: 'Name', required: true%>
 					</div>
-					<div class="col-md-5">
-						<textarea name="comment" class="contactform" placeholder="Message *"></textarea>
-
+					<div class="form-group">
+						<%= f.label :email %>
+						<%= f.email_field :email, class: 'form-control', placeholder: 'Email', required: true%>
 					</div>
-
-					<div class="col-md-3">
-						<input type="hidden" name="_csrf" value="{{ csrfToken }}">
-						<input type="submit" id="submit" class="contactform submit" value="Send message">
+					<div class="form-group">
+						<%= f.label :Phone %>
+						<%= f.text_field :phone, class: 'form-control', placeholder: 'Phone'%>
 					</div>
-				</form>
-
+					<div class="form-group">
+						<%= f.label :message %>
+						<%= f.text_area :message, class: 'form-control', placeholder: 'Message', required: true%>
+					</div>
+				<%= f.submit 'Send us', class: "button btn btn-outline my-2 my-sm-0 fontawsomeicon" %>
+				<% end %>
 
 			</div>
 		</div>
