@@ -17,6 +17,7 @@ class PersonalWebsitesController < ApplicationController
       flash[:notice] = "Thank you for your message"
     end
   end
+
   def download_resume
     file_name = "resume.pdf"
     filepath = Rails.root.join('public', file_name)

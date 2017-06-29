@@ -3,7 +3,7 @@
 
 		<div class="row">
 			<div class="col-lg-12 col-lg-offset-2">
-				<h4 class="education-title ">About me</h4>
+				<h4>About me</h4>
 				<div class="first-para ">
 					<p>Sans-serif typefaces first originated in the eighteenth century but didn’t see widespread use until the nineteenth century. In the print world, serif typefaces are almost universally used for setting running body text, however, on the web,
 						sans-serifs dominate. On lower-resolution displays, sans-serifs tend to display better, however, higher-resolution displays can better handle the fine details of serifs, so I predict we’ll see serif typefaces used more on the web in the coming years.
@@ -14,7 +14,7 @@
 
 		<div class="row">
 			<div class="col-lg-12 col-lg-offset-2">
-				<h4 class="education-title">My contact Info</h4>
+				<h4>My contact Info</h4>
 				<div class="row">
 					<div class="col-md-7">
 						<div class="map-container">
@@ -49,8 +49,10 @@
 								<i class="fa fa-envelope fontawsomeicon" aria-hidden="true"></i>
 								bhattaraishiva17@gmail.com</li>
 							<li>
-								<i class="fa fa-download fontawsomeicon" aria-hidden="true"></i>
-								<%= link_to 'Download My Resume', personal_websites_download_resume_download_path%></li>
+								<i class="fa fa-download fontawsomeicon" aria-hidden="true">
+								<%= link_to 'Download My Resume', personal_websites_download_resume_path %>
+							</i>
+							</li>
 						</ul>
 
 					</div>
@@ -60,7 +62,7 @@
 
 		<div class="row">
 			<div class="col-lg-12 col-lg-offset-2">
-				<h4 class="education-title">Message me</h4>
+				<h4>Message me</h4>
 				<div class="about_form">
 
 				<%= form_for(@about, url: about_path, html: {method: :post, role: 'form'}) do |f| %>
