@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'personal_websites/education'
   get 'personal_websites/experience'
   match 'personal_websites/about', to: "personal_websites#about", as: "about", via:[:get, :post]
-  get 'download_resume', to: "personal_websites#download_resume"
+  get 'personal_websites/download_resume/download', to: "personal_websites#download_resume"
 
 
   root 'personal_websites#home'

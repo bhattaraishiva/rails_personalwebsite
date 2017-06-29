@@ -18,7 +18,10 @@ class PersonalWebsitesController < ApplicationController
     end
   end
   def download_resume
-    send_file "#{Rails.root}/app/assets/docs/resume.pdf", type: "application/pdf"
+    file_name = "resume.pdf"
+    filepath = Rails.root.join('public', file_name)
+    send_file(filepath, filename: file_name, type: "application/pdf")
+
   end
 
   def about_params
