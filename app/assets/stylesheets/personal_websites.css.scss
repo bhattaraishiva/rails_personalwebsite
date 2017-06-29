@@ -249,10 +249,9 @@ hr {
 .experience-left {
     float: left;
     width: 30%;
-    background: var(--background-color);
     text-align: center;
-    padding: 2em 0;
-    border: 2px solid black;
+    padding: 1.5em;
+    color: #0285a1;
 	-webkit-transition: .5s all;
 	-moz-transition: .5s all;
 	transition: .5s all;
@@ -260,37 +259,29 @@ hr {
 	-ms-transition: .5s all;
 }
 
-.experience-right {
-    float: right;
-    width: 70%;
-    border: 2px solid ;
+.experience-middle {
+  float: none;
+  width: 30%;
 	padding: 1.5em;
 }
-.experience-left h3 {
-    font-size: 1.8em;
-    color: #fff;
-    font-family:  var(--font-family);
-    font-weight: 800;
 
+.experience-middle h4 {
+  color: #0285a1;
 }
-.experience-left h5 {
-    font-size: 1em;
-    color: #fff;
-    margin-top: 1em;
+
+.experience-right {
+  float: right;
+  width: 30%;
+	padding: 1.5em;
 }
+
 .experience-right h4 {
-    font-size: 1.6em;
-    color: #0285a1;
-    margin-bottom: 0.5em;
-	font-weight: 900;
+  color: #0285a1;
 }
 
-
-.experience-left h3 span {
-    font-size: .5em;
-    font-weight: 300;
-    vertical-align: middle;
-    margin-left: 5px;
+.experience-list{
+  list-style-type: disc;
+  list-style-position: outside;
 }
 
 .experience-grids.experience-grids-btm {
