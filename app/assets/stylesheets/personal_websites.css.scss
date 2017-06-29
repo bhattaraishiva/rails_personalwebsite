@@ -1,0 +1,463 @@
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+body {
+  color: #333;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 1rem;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+  color: #0285a1;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(255,255,255,.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #0285a1;
+  border-bottom-color: #0285a1;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  //color: rgba(255,255,255,.5);
+  color: #0285a1;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: absolute;
+    top: 0;
+  }
+  .mastfoot {
+    position:relative;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+  }
+}
+
+
+/* css for education page */
+
+
+
+.pattern-overlay {
+  background-image: url(/assets/retina_wood.png);
+	background-repeat: repeat;
+  padding-top:  20px;
+  margin-top: 4rem;
+}
+
+.blog-heading > h1{
+	font-family: var(--font-family);
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.blog-heading > h6{
+	font-family: var(--font-family-oleo);
+	font-size: 14px;
+	font-weight: normal;
+}
+.blog-common > a {
+	color: #333333;
+}
+
+.blog-common > a:hover,
+.blog-common > a:focus{
+	color: var(--background-color);
+	text-decoration: underline;
+}
+
+.blog-common > a > .blog-title {
+	font-size: 20px;
+	margin-top: 30px;
+   margin-bottom: 10px;
+   font-weight: 900;
+  	color: black;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.blog-common > .blog-by {
+	color: #777777;
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.section-heading {
+	font-size: 24px;
+	margin-top: 60px;
+	font-weight: 700;
+}
+
+.education-title {
+  font-size: 24px;
+  color: black;
+	text-align:center;
+	font-weight: 900;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+
+.education-title::first-letter {
+	color: var(--background-color);
+}
+.modal-body.modal-spa {
+    padding: 0 1em 2em;
+}
+
+.experience-grids {
+    width: 90%;
+}
+
+.experience-left {
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 1.5em;
+    color: #0285a1;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	transition: .5s all;
+	-o-transition: .5s all;
+	-ms-transition: .5s all;
+}
+
+.experience-middle {
+  float: none;
+  width: 30%;
+	padding: 1.5em;
+}
+
+.experience-middle-work{
+  float: none;
+  width: 60%;
+	padding: 1.5em;
+}
+.experience-middle-work h6{
+  color: #0285a1;
+
+}
+
+.experience-middle h6 {
+  color: #0285a1;
+}
+
+.experience-right {
+  float: right;
+  width: 30%;
+	padding: 1.5em;
+}
+
+.experience-right h6 {
+  color: #0285a1;
+}
+
+.experience-list{
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.experience-grids.experience-grids-btm {
+    margin: 2em auto;
+}
+
+/*for about page*/
+.education-title {
+  font-size: 24px;
+  color: black;
+	text-align:center;
+	font-weight: 900;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+
+.education-title::first-letter {
+	color: #0285a1;
+
+}
+
+/* --- Contact --- */
+/* --- Map --- */
+.map{
+	position:relative;
+	margin-top:1px;
+	margin-bottom:1px;
+}
+
+.map iframe{
+	width:100%;
+	height:350px;
+	border: dashed;
+}
+
+.map-container {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .map-container i {
+        position: absolute;
+        display: block;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    }
+
+    .map-top { top: -5px; left: 0; right: 0; height: 5px; }
+    .map-right { right: -5px; top: 0; bottom: 0; width: 5px; }
+    .map-bottom { bottom: -5px; left: 0; right: 0; height: 5px; }
+    .map-left { left: -5px; top: 0; bottom: 0; width: 5px; }
+
+
+
+.mycontactinfo ul {
+	color:#333;
+	list-style:none;
+	margin-left:-40px;
+}
+
+.mycontactinfo ul li {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.mycontactinfo i {
+	color: var(--background-color);
+	font-size: 30px;
+}
+
+input.contactform {
+	background:#fff;
+	border:solid 1px #ddd;
+	color:#000;
+	padding:15px 30px;
+	margin-right:3%;
+	margin-bottom:5px;
+	outline:none;
+	width: 400px;
+}
+
+textarea.contactform {
+	background:#fff;
+	color:#000;
+	border:solid 1px #ddd;
+	padding:15px 30px;
+	width: 400px;
+	margin-bottom:40px;
+	outline:none;
+	height:157px;
+}
+.contactform.submit {
+	background:var(--background-color);
+	font-family:'Montserrat',sans-serif;
+	color:#fff;
+	font-size:14px;
+	font-weight:900;
+	text-align:center;
+	margin-bottom: 5px;
+	position: relative;
+	top: -30px;
+	width: 200px;
+	border:none !important;
+	border-radius:3px;
+}
+.contactform.submit:hover {
+	background:black ;
+}
+
+
+.fontawsomeicon {
+  color:#0285a1;
+}
+.about_form {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+
+/*css for expericence and work */
+
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+  color:#0285a1;
+  font-weight: 900;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: transparent;
+}
+
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}

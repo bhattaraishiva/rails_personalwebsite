@@ -34,7 +34,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'bootstrap', '~> 4.0.0.alpha3.1'
+gem "font-awesome-rails"
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'dotenv-rails'
