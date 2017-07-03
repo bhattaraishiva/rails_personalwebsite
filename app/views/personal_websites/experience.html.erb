@@ -5,8 +5,11 @@
 
 				<section class="jumbotron text-center">
 					<div class="container">
-						<h4 class="jumbotron-heading">Technical Skills</h4>
-						<p class="text-muted">This part of the page gives information about technical knowledege and skills.</p>
+						<h4 class="jumbotron-heading">Work & Skills</h4>
+						<p class="text-muted">This page gives information about technical knowledege
+							and skills.It also gives information about previously working company,
+							university thesis project and self done major project and works.
+						</p>
 					</div>
 				</section>
 
@@ -44,128 +47,116 @@
 						</ul>
 					</div>
 				</div>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="pattern-overlay">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-lg-offset-2">
-
-				<section class="jumbotron text-center">
-					<div class="container">
-						<h4 class="jumbotron-heading">My work and experience</h4>
-						<p class="text-muted">This part of the page gives information about previously working company, university thesis project and self done major project and works.</p>
+				<hr>
+				<div class="row text-justify">
+					<div class="experience-left">
+						<h6>Work experience</h6>
 					</div>
-				</section>
 
-								<div class="row text-justify">
-									<div class="experience-left">
-										<h6>Work experience</h6>
-									</div>
+					<div class="experience-middle-work">
+						<h6>Software programmer and Database designer(March 2011-August 2013)</h6>
+						<p>
+							<%= link_to 'MiDas Technologies Pvt. Ltd. PEA Marg, Thapathali, Kathmandu, Nepal.', 'http://midastechnologies.com.np/', class:'company_links' %><br>
+							The company developes desktop application that helps in managing Hospital, Medical laboratory, school. I work as programmer and database designer for Hospital and laboratory management softwares. Also i got chance to work as team leader for some
+							applications. The applications were developed in delphi/pascal as programming languages and uses oracle and SQL server as databases</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row text-justify">
+					<div class="experience-left">
+						<h6>Major Projects</h6>
+					</div>
 
-									<div class="experience-middle-work">
-										<h6>Software programmer and Database designer(March 2011-August 2013)</h6>
-										<p><a href="http://midastechnologies.com.np/">MiDas Technologies Pvt. Ltd. PEA Marg, Thapathali, Kathmandu, Nepal.</a><br>
-										The company developes desktop application that helps in managing Hospital, Medical laboratory, school.
-										I work as programmer and database designer for Hospital and laboratory management softwares.
-										Also i got chance to work as team leader for some applications.
-										The applications were developed in delphi/pascal as programming languages and uses oracle and SQL server as databases</p>
-									</div>
+					<div class="experience-middle-work">
+						<h6><%= link_to 'EasyChalak', 'https://easychalak.herokuapp.com/', class:'company_links' %></h6>
+						<p>
+							This is website helps to prepare for the driving licence permit.
+							It contains various sets of questions and each set has multiple questions.
+							The user can test himself/herself by making an account. Furthermore,
+							It also provides various turorials to prepare for the exam.
+							<br><br>
+							Technologies used: Ruby on rails(backend), bootstrap with slim(frontend),
+							PostgreSQL database(production), sqlite3(development and testing)
+							</p>
+						<h6><%= link_to 'Personal website(Resume)', 'http://midastechnologies.com.np/', class:'company_links' %></h6>
+						<p>
+							This is my personal website that contains my academic background,
+							work, expericences, technologies that i use and comfortable with
+							and my personal informations.<br><br>
 
-
-								</div>
-
-								<div class="row text-justify">
-									<div class="experience-left">
-										<h6>Major Projects</h6>
-									</div>
-
-									<div class="experience-middle-work">
-										<h6>EasyChalak</h6>
-										<p><a href="http://midastechnologies.com.np/">MiDas Technologies Pvt. Ltd. PEA Marg, Thapathali, Kathmandu, Nepal.</a><br>
-										The company developes desktop application that helps in managing Hospital, Medical laboratory, school.
-										I work as programmer and database designer for Hospital and laboratory management softwares.
-										Also i got chance to work as team leader for some applications.
-										The applications were developed in delphi/pascal as programming languages and uses oracle and SQL server as databases</p>
-
-										<h6>EasyChalak</h6>
-										<p><a href="http://midastechnologies.com.np/">MiDas Technologies Pvt. Ltd. PEA Marg, Thapathali, Kathmandu, Nepal.</a><br>
-										The company developes desktop application that helps in managing Hospital, Medical laboratory, school.
-										I work as programmer and database designer for Hospital and laboratory management softwares.
-										Also i got chance to work as team leader for some applications.
-										The applications were developed in delphi/pascal as programming languages and uses oracle and SQL server as databases</p>
-
-									</div>
+							Technologies used: Ruby on rails(backend), bootstrap(frontend),
+							PostgreSQL database(production), sqlite3(development and testing)
+						</p>
 
 
 
-								</div>
+						<h6><%= link_to 'Development of a security framework for HTML5-based mobile agents',
+							'https://dspace.cc.tut.fi/dpub/handle/123456789/23736',
+							class:'company_links' %></h6>
+						<p>
+							This is my master thesis, This thesis focuses threats and provides a solution to
+							protect mobile agent framework against them. The solution uses a signing method
+							that involves salting and hashing of source address to generate signature. <br><br>
+							Technologies used: JavaScript and Node.js.
+						</p>
 
+						<h6><%= link_to 'Health Management Information System(HMIS-32)',
+						'http://midastechnologies.com.np/products.php', class:'company_links' %>
+						</h6>
+							<p>
+								This is a desktop application developed under <%= link_to 'MiDas Technologies Pvt. Ltd.',
+								'http://midastechnologies.com.np/', class:'company_links'%>.
+								The application was developed using the information given by Nepal Government's Ministy of Health and the Health posts of Nepal.
+								This application is used to collect the data from the Health post and gives monthly/annual report which has to be submitted to Ministy of Health.
+								The application is used in some Health post of Nepal.<br><br>
+								Technologies used: Delphi/pascal(programming language) and SQL server(database).
+						</p>
 
+						<h6><%= link_to 'Child Birth Management Information System',
+						'http://midastechnologies.com.np/products.php', class:'company_links' %>
+						</h6>
+							<p>
+								This is a desktop application developed under <%= link_to 'MiDas Technologies Pvt. Ltd.',
+								'http://midastechnologies.com.np/', class:'company_links'%>.
+								The application was developed using the information given by Nepal Government's Ministy of Health and Paropakar Maternity and
+								Women’s Hospital, Kathmandu, Nepal.
+								This application is used to collect the data of newly birth child and gives monthly/annual report which has to be submitted to Ministy of Health.
+								The application is used in Paropakar Maternity and Women’s Hospital, Kathmandu, Nepal.<br><br>
+								Technologies used: Delphi/pascal(programming language) and Oracle(database).
+						</p>
 
-						<div class="album text-muted">
-							<div class="container">
+						<h6><%= link_to 'Hospital Management System Software(HMIS) and School Management System',
+						'http://midastechnologies.com.np/products.php', class:'company_links' %>
+						</h6>
+							<p>
+								The project includes Hospital Management System Software and School Management System Software for the Governmental and Non-Governmental Hospital of Nepal.
+								those are developed under <%= link_to 'MiDas Technologies Pvt. Ltd.',
+								'http://midastechnologies.com.np/', class:'company_links'%>.
+								The applications are used to collect, manage and store data from hospitals and schools.
+										The collected data are analyzed and interpreted for the better planning,
+										monitoring, and control of health services and schools.
+										It also includes clinical record management system for HMIS, that helps to record, admit discharge the patient.
+										It also record doctors, nurses, and necessary information of the patient.<br><br>
+								Technologies used: Delphi/pascal(programming language), Oracle and SQL server (database).
+						</p>
 
-								<div class="row">
-									<div class="card" style="width: 22rem;">
-										<%= image_tag("easychalak.png", alt:"Card image cap", class: "card-img-top", width: 300, height: 150) %>
-										<div class="card-block">
-											<h4 class="card-title">EasyChalak</h4>
-											<p class="card-text text-justify">
-												This is website helps to prepare for the driving licence permit.
-												It contains various sets of questions and each set has multiple questions.
-												The user can test himself/herself by making an account. Furthermore, It also provides various turorials to prepare for the exam.
-												The site is build on Ruby on rails framework as backend, bootstrap with slim as frontend and uses PostgreSQL database.
-											</p>
-											<a href="https://easychalak.herokuapp.com/" class="btn btn-primary">View Project</a>
-										</div>
-									</div>
+						<h6><%= link_to 'Laboratory Information System(LIS)',
+						'http://midastechnologies.com.np/products.php', class:'company_links' %>
+						</h6>
+							<p>
+								The project Laboratory Information System(LIS) is developed under <%= link_to 'MiDas Technologies Pvt. Ltd.',
+								'http://midastechnologies.com.np/', class:'company_links'%>.
 
-									<div class="card" style="width: 22rem;">
-										<%= image_tag("tut.png", alt:"Card image cap", class: "card-img-top", width: 300, height: 150) %>
-										<div class="card-block">
-											<h4 class="card-title">Development of a security framework for HTML5-Based mobile agents</h4>
-											<p class="card-text text-justify">This is my master thesis,
-												This thesis focuses threats and provides a solution to protect
-												mobile agent framework against them. The solution uses a signing
-												method that involves salting and hashing of source address to
-												generate signature. The solution is done with Javascript and Nodejs.</p>
-											<a href="https://dspace.cc.tut.fi/dpub/handle/123456789/23736" class="btn btn-primary">View project</a>
-										</div>
-									</div>
+								The application is used to collect, manage and store data from medical laboratories.
+								The application is capable of sending test orders to laboratory instruments,
+								track those order and record them.
+								Finally, it also provides patient investigation report.<br><br>
 
-									<div class="card" style="width: 22rem;">
-										<%= image_tag("midas.png", alt:"Card image cap", class: "card-img-top", width: 300, height: 150) %>
-										<div class="card-block">
-											<h4 class="card-title">Card title</h4>
-											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											<a href="#" class="btn btn-primary">Go somewhere</a>
-										</div>
-									</div>
-									<div class="card" style="width: 22rem;">
-										<%= image_tag("midas.png", alt:"Card image cap", class: "card-img-top", width: 300, height: 150) %>
-										<div class="card-block">
-											<h4 class="card-title">Card title</h4>
-											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											<a href="#" class="btn btn-primary">Go somewhere</a>
-										</div>
-									</div>
-									<div class="card" style="width: 22rem;">
-										<%= image_tag("midas.png", alt:"Card image cap", class: "card-img-top", width: 300, height: 150) %>
-										<div class="card-block">
-											<h4 class="card-title">Card title</h4>
-											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											<a href="#" class="btn btn-primary">Go somewhere</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+								Technologies used: Delphi/pascal(programming language), Oracle and SQL server (database).
+						</p>
 
+					</div>
+				</div>
 
 			</div>
 		</div>
