@@ -98,6 +98,90 @@ body {
  * Cover
  */
 
+ .home {
+   text-align: center;
+   color: #0285a1;
+     }
+   .home .intro-text {
+     padding-top: 100px;
+     padding-bottom: 50px; }
+     .home.intro-text .intro-lead-in {
+       font-size: 22px;
+       font-style: italic;
+       line-height: 22px;
+       margin-bottom: 25px;
+       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+     .home .intro-text .intro-heading {
+       font-size: 50px;
+       font-weight: 700;
+       line-height: 50px;
+       margin-bottom: 25px;
+       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+       text-transform: uppercase; }
+
+ @media (min-width: 768px) {
+   .home .intro-text {
+     padding-top: 100px;
+     padding-bottom: 200px; }
+     .home .intro-text .intro-lead-in {
+       font-size: 40px;
+       font-style: italic;
+       line-height: 40px;
+       margin-bottom: 25px;
+       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+     .home .intro-text .intro-heading {
+       font-size: 75px;
+       font-weight: 700;
+       line-height: 75px;
+       margin-bottom: 50px;
+       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+       text-transform: uppercase; } }
+
+       .btn-xl {
+         font-size: 18px;
+         font-weight: 700;
+         padding: 20px 40px;
+         border-radius: 3px;
+         color: white;
+         border-color: #0285a1;
+         background-color: #0285a1;
+         font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+         text-transform: uppercase; }
+         .btn-xl:focus, .btn-xl.focus {
+           color: white;
+           border-color: #0285a1;
+           background-color: white; }
+         .btn-xl:hover {
+           color: white;
+           border-color: #0285a1;
+           background-color: white; }
+         .btn-xl:active, .btn-xl.active,
+         .open > .btn-xl.dropdown-toggle {
+           color: white;
+           border-color: #0285a1;
+           background-color: white; }
+           .btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus,
+           .open > .btn-xl.dropdown-toggle:hover,
+           .open > .btn-xl.dropdown-toggle:focus,
+           .open > .btn-xl.dropdown-toggle.focus {
+             color: white;
+             border-color: #0285a1;
+             background-color: white; }
+         .btn-xl:active, .btn-xl.active,
+         .open > .btn-xl.dropdown-toggle {
+           background-image: none; }
+         .btn-xl.disabled:hover, .btn-xl.disabled:focus, .btn-xl.disabled.focus, .btn-xl[disabled]:hover, .btn-xl[disabled]:focus, .btn-xl[disabled].focus,
+         fieldset[disabled] .btn-xl:hover,
+         fieldset[disabled] .btn-xl:focus,
+         fieldset[disabled] .btn-xl.focus {
+           border-color: #fed136;
+           background-color: #fed136; }
+         .btn-xl .badge {
+           color: #fed136;
+           background-color: white; }
+
+
+
 .cover {
   padding: 0 1.5rem;
 }
@@ -115,7 +199,8 @@ body {
    text-align: center;
    color:#fff;
    background-color: #0285a1;
-   position: static;
+   position: relative;
+
    }
    footer span.copyright {
      font-size: 90%;
