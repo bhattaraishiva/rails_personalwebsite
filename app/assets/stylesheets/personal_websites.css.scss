@@ -29,8 +29,7 @@ html,
 body {
   height: 100%;
   background-color: #fff;
-}
-body {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
@@ -99,6 +98,90 @@ body {
  * Cover
  */
 
+ .home {
+   text-align: center;
+   color: #0285a1;
+     }
+   .home .intro-text {
+     padding-top: 100px;
+     padding-bottom: 50px; }
+     .home.intro-text .intro-lead-in {
+       font-size: 22px;
+       font-style: italic;
+       line-height: 22px;
+       margin-bottom: 25px;
+       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+     .home .intro-text .intro-heading {
+       font-size: 50px;
+       font-weight: 700;
+       line-height: 50px;
+       margin-bottom: 25px;
+       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+       text-transform: uppercase; }
+
+ @media (min-width: 768px) {
+   .home .intro-text {
+     padding-top: 80px;
+     padding-bottom: 195px; }
+     .home .intro-text .intro-lead-in {
+       font-size: 40px;
+       font-style: italic;
+       line-height: 40px;
+       margin-bottom: 25px;
+       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+     .home .intro-text .intro-heading {
+       font-size: 75px;
+       font-weight: 700;
+       line-height: 75px;
+       margin-bottom: 50px;
+       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+       text-transform: uppercase; } }
+
+       .btn-xl {
+         font-size: 18px;
+         font-weight: 700;
+         padding: 20px 40px;
+         border-radius: 3px;
+         color: white;
+         border-color: #0285a1;
+         background-color: #0285a1;
+         font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+         text-transform: uppercase; }
+         .btn-xl:focus, .btn-xl.focus {
+           color: #0285a1;
+           border-color: #0285a1;
+           background-color: white; }
+         .btn-xl:hover {
+           color: #0285a1;
+           border-color: #0285a1;
+           background-color: white; }
+         .btn-xl:active, .btn-xl.active,
+         .open > .btn-xl.dropdown-toggle {
+           color: #0285a1;
+           border-color: #0285a1;
+           background-color: white; }
+           .btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus,
+           .open > .btn-xl.dropdown-toggle:hover,
+           .open > .btn-xl.dropdown-toggle:focus,
+           .open > .btn-xl.dropdown-toggle.focus {
+             color: #0285a1;
+             border-color: #0285a1;
+             background-color: white; }
+         .btn-xl:active, .btn-xl.active,
+         .open > .btn-xl.dropdown-toggle {
+           background-image: none; }
+         .btn-xl.disabled:hover, .btn-xl.disabled:focus, .btn-xl.disabled.focus, .btn-xl[disabled]:hover, .btn-xl[disabled]:focus, .btn-xl[disabled].focus,
+         fieldset[disabled] .btn-xl:hover,
+         fieldset[disabled] .btn-xl:focus,
+         fieldset[disabled] .btn-xl.focus {
+           border-color: #fed136;
+           background-color: #fed136; }
+         .btn-xl .badge {
+           color: #fed136;
+           background-color: white; }
+
+
+
 .cover {
   padding: 0 1.5rem;
 }
@@ -111,6 +194,45 @@ body {
 /*
  * Footer
  */
+ footer {
+   padding: 25px 0;
+   text-align: center;
+   color:#fff;
+   background-color: #0285a1;
+   position: relative;
+
+   }
+   footer span.copyright {
+     font-size: 90%;
+     line-height: 40px;
+     text-transform: none;
+     text-transform: uppercase; }
+   footer ul.quicklinks {
+     font-size: 90%;
+     line-height: 40px;
+     margin-bottom: 0;
+     text-transform: none;
+     text-transform: uppercase; }
+
+ ul.social-buttons {
+   margin-bottom: 0; }
+   ul.social-buttons li a {
+     font-size: 20px;
+     line-height: 40px;
+     display: block;
+     width: 40px;
+     height: 40px;
+     -webkit-transition: all .3s;
+     -moz-transition: all .3s;
+     transition: all .3s;
+     color: white;
+     border-radius: 100%;
+     outline:none;
+     background-color: black; }
+     ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+       background-color: white;
+       color: #0285a1;
+     }
 
 .mastfoot {
   //color: rgba(255,255,255,.5);
@@ -154,7 +276,9 @@ body {
 
 /* css for education page */
 
-
+.card-img-top{
+  text-align: center;
+}
 
 .pattern-overlay {
 	background-repeat: repeat;
@@ -248,11 +372,7 @@ hr {
 	-ms-transition: .5s all;
 }
 
-.experience-middle {
-  float: none;
-  width: 30%;
-	padding: 1.5em;
-}
+
 
 .experience-middle-work{
   float: none;
@@ -281,6 +401,8 @@ hr {
 .experience-list{
   list-style-type: disc;
   list-style-position: outside;
+  text-align: left;
+  margin-left: 50px;
 }
 
 .experience-grids.experience-grids-btm {
@@ -432,25 +554,83 @@ textarea.contactform {
   max-width: 40rem;
 }
 
+.btn-outline,
+.btn-outline:hover {
+  border-color: currentcolor;
+}
+
+.btn-outline {
+  border-radius: var(--border-radius);
+  background-color: black
+}
+
+.btn-outline:hover {
+  box-shadow: inset 0 0 0 20rem var(--darken-1);
+  border-color: #0285a1;
+  background-color: white;
+  color: #0285a1;
+}
+
+.btn-outline:active {
+  box-shadow: inset 0 0 0 20rem var(--darken-2),
+    inset 0 3px 4px 0 var(--darken-3),
+    0 0 1px var(--darken-2);
+}
+
+.btn-outline:disabled,
+.btn-outline.is-disabled {
+  opacity: .5;
+}
+
+
 .album {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: transparent;
+  padding-left: 3rem;
+  background-color: white;
+
 }
 
 .card {
   float: left;
-  width: 33.333%;
+  //width: 33.333%;
   padding: .75rem;
   margin-bottom: 2rem;
+  margin-right: 0.5rem;
   border: 0;
+  background-color: #0285a1;
+}
+.technologies{
+  width: 33.333%;
+  text-align: center;
+}
+.experience {
+  width: 68%;
+}
+.technologies-header {
+  background-color: #0285a1;
+  color: white;
+}
+.technologies-block{
+  color: black;
+  background-color: white;
+
+}
+.card > .card-img-top{
+  margin-bottom: .75rem;
+  text-align: center;
+  margin-left: 10px;
+
 }
 
-.card > img {
-  margin-bottom: .75rem;
+.card-title{
+  text-align: center;
+  color: white;
 }
 
 .card-text {
   font-size: 85%;
+  text-align: center;
+  color: white;
 }
