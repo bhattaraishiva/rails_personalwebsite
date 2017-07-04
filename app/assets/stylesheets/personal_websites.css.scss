@@ -372,11 +372,7 @@ hr {
 	-ms-transition: .5s all;
 }
 
-.experience-middle {
-  float: none;
-  width: 30%;
-	padding: 1.5em;
-}
+
 
 .experience-middle-work{
   float: none;
@@ -405,6 +401,8 @@ hr {
 .experience-list{
   list-style-type: disc;
   list-style-position: outside;
+  text-align: left;
+  margin-left: 50px;
 }
 
 .experience-grids.experience-grids-btm {
@@ -596,23 +594,41 @@ textarea.contactform {
 
 .card {
   float: left;
-  width: 33.333%;
+  //width: 33.333%;
   padding: .75rem;
   margin-bottom: 2rem;
   margin-right: 0.5rem;
   border: 0;
   background-color: #0285a1;
 }
+.technologies{
+  width: 33.333%;
+  text-align: center;
+}
+.experience {
+  width: 68%;
+}
+.technologies-header {
+  background-color: #0285a1;
+  color: white;
+}
+.technologies-block{
+  color: black;
+  background-color: white;
 
+}
 .card > .card-img-top{
   margin-bottom: .75rem;
   text-align: center;
+  margin-left: 10px;
+
 }
 
 .card-title{
   text-align: center;
   color: white;
 }
+
 .card-text {
   font-size: 85%;
   text-align: center;
