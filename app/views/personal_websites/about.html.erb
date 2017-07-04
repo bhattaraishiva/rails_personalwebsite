@@ -3,18 +3,23 @@
 
 		<div class="row">
 			<div class="col-lg-12 col-lg-offset-2">
-				<h4>About me</h4>
-				<div class="first-para ">
-					<p>Sans-serif typefaces first originated in the eighteenth century but didn’t see widespread use until the nineteenth century. In the print world, serif typefaces are almost universally used for setting running body text, however, on the web,
-						sans-serifs dominate. On lower-resolution displays, sans-serifs tend to display better, however, higher-resolution displays can better handle the fine details of serifs, so I predict we’ll see serif typefaces used more on the web in the coming years.
-					</p>
-				</div>
+
+				<section class="jumbotron text-center">
+						<h4 class="jumbotron-heading">About me</h4>
+						<p > Sans-serif typefaces first originated in the eighteenth century but didn’t see widespread use until the nineteenth century. In the print world, serif typefaces are almost universally used for setting running body text, however, on the web,
+												sans-serifs dominate. On lower-resolution displays, sans-serifs tend to display better, however, higher-resolution displays can better handle the fine details of serifs, so I predict we’ll see serif typefaces used more on the web in the coming years.
+
+						</p>
+				</section>
+
 			</div>
 		</div>
+		<hr>
 
 		<div class="row">
 			<div class="col-lg-12 col-lg-offset-2">
-				<h4>My contact Info</h4>
+				<h4 class="jumbotron-heading">My contact Info</h4>
+
 				<div class="row">
 					<div class="col-md-7">
 						<div class="map-container">
@@ -50,7 +55,7 @@
 								bhattaraishiva17@gmail.com</li>
 							<li>
 								<i class="fa fa-download fontawsomeicon" aria-hidden="true">
-								<%= link_to 'Download My Resume', personal_websites_download_resume_path %>
+								<%= link_to 'Download My Resume', personal_websites_download_resume_path, class: 'company_links' %>
 							</i>
 							</li>
 						</ul>
@@ -59,10 +64,11 @@
 				</div>
 			</div>
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-lg-12 col-lg-offset-2">
-				<h4>Message me</h4>
+				<h4 class="jumbotron-heading">Message me</h4>
+
 				<div class="about_form">
 
 				<%= form_for(@about, url: about_path, html: {method: :post, role: 'form'}) do |f| %>
@@ -87,6 +93,8 @@
 			</div>
 			</div>
 		</div>
+
+		<hr>
 
 	</div>
 </div>
