@@ -29,8 +29,7 @@ html,
 body {
   height: 100%;
   background-color: #fff;
-}
-body {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
@@ -111,6 +110,42 @@ body {
 /*
  * Footer
  */
+ footer {
+   padding: 25px 0;
+   text-align: center;
+   color:#fff;
+   background-color: #0285a1;
+   position: static;
+   }
+   footer span.copyright {
+     font-size: 90%;
+     line-height: 40px;
+     text-transform: none;
+     text-transform: uppercase; }
+   footer ul.quicklinks {
+     font-size: 90%;
+     line-height: 40px;
+     margin-bottom: 0;
+     text-transform: none;
+     text-transform: uppercase; }
+
+ ul.social-buttons {
+   margin-bottom: 0; }
+   ul.social-buttons li a {
+     font-size: 20px;
+     line-height: 40px;
+     display: block;
+     width: 40px;
+     height: 40px;
+     -webkit-transition: all .3s;
+     -moz-transition: all .3s;
+     transition: all .3s;
+     color: white;
+     border-radius: 100%;
+     outline: none;
+     background-color: #222222; }
+     ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+       background-color: #fed136; }
 
 .mastfoot {
   //color: rgba(255,255,255,.5);
