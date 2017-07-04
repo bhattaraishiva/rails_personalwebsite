@@ -121,8 +121,8 @@ body {
 
  @media (min-width: 768px) {
    .home .intro-text {
-     padding-top: 100px;
-     padding-bottom: 200px; }
+     padding-top: 80px;
+     padding-bottom: 195px; }
      .home .intro-text .intro-lead-in {
        font-size: 40px;
        font-style: italic;
@@ -148,23 +148,23 @@ body {
          font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
          text-transform: uppercase; }
          .btn-xl:focus, .btn-xl.focus {
-           color: white;
+           color: #0285a1;
            border-color: #0285a1;
            background-color: white; }
          .btn-xl:hover {
-           color: white;
+           color: #0285a1;
            border-color: #0285a1;
            background-color: white; }
          .btn-xl:active, .btn-xl.active,
          .open > .btn-xl.dropdown-toggle {
-           color: white;
+           color: #0285a1;
            border-color: #0285a1;
            background-color: white; }
            .btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus,
            .open > .btn-xl.dropdown-toggle:hover,
            .open > .btn-xl.dropdown-toggle:focus,
            .open > .btn-xl.dropdown-toggle.focus {
-             color: white;
+             color: #0285a1;
              border-color: #0285a1;
              background-color: white; }
          .btn-xl:active, .btn-xl.active,
@@ -227,10 +227,12 @@ body {
      transition: all .3s;
      color: white;
      border-radius: 100%;
-     outline: none;
-     background-color: #222222; }
+     outline:none;
+     background-color: black; }
      ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
-       background-color: #fed136; }
+       background-color: white;
+       color: #0285a1;
+     }
 
 .mastfoot {
   //color: rgba(255,255,255,.5);
@@ -559,10 +561,14 @@ textarea.contactform {
 
 .btn-outline {
   border-radius: var(--border-radius);
+  background-color: black
 }
 
 .btn-outline:hover {
   box-shadow: inset 0 0 0 20rem var(--darken-1);
+  border-color: #0285a1;
+  background-color: white;
+  color: #0285a1;
 }
 
 .btn-outline:active {
