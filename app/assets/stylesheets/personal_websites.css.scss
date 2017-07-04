@@ -276,7 +276,9 @@ body {
 
 /* css for education page */
 
-
+.card-img-top{
+  text-align: center;
+}
 
 .pattern-overlay {
 	background-repeat: repeat;
@@ -587,7 +589,9 @@ textarea.contactform {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: transparent;
+  padding-left: 3rem;
+  background-color: white;
+
 }
 
 .card {
@@ -595,13 +599,22 @@ textarea.contactform {
   width: 33.333%;
   padding: .75rem;
   margin-bottom: 2rem;
+  margin-right: 0.5rem;
   border: 0;
+  background-color: #0285a1;
 }
 
-.card > img {
+.card > .card-img-top{
   margin-bottom: .75rem;
+  text-align: center;
 }
 
+.card-title{
+  text-align: center;
+  color: white;
+}
 .card-text {
   font-size: 85%;
+  text-align: center;
+  color: white;
 }
