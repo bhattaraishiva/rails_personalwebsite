@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   match 'personal_websites/about', to: "personal_websites#about", as: "about", via:[:get, :post]
   get 'personal_websites/download_resume', to: "personal_websites#download_resume"
 
+  get 'personal_websites/blog'
 
   root 'personal_websites#home'
 end
