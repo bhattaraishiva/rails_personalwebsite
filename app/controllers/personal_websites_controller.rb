@@ -8,6 +8,9 @@ class PersonalWebsitesController < ApplicationController
   def experience
   end
 
+  def blog
+  end
+  
   def about
     @about = About.new
     if request.post?
@@ -22,7 +25,6 @@ class PersonalWebsitesController < ApplicationController
     file_name = "resume.pdf"
     filepath = Rails.root.join('public', file_name)
     send_file(filepath, filename: file_name, type: "application/pdf")
-
   end
 
   def about_params
